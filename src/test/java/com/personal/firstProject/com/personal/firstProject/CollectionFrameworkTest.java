@@ -22,10 +22,7 @@ public class CollectionFrameworkTest {
 		int totalcols = sheet.getRow(0).getLastCellNum();
 		Map<Object, Object> map = new HashMap<Object,Object>();
 		Object[][] obj = new Object[totalrows][1];
-		Collections.ma
-		
-		
-		
+			
 		for(int i=1; i <totalrows; i++)
 		{
 			for(int j=0; j<totalcols; j++)
