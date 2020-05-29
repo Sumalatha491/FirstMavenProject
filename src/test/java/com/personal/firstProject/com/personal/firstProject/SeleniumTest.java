@@ -54,11 +54,7 @@ public class SeleniumTest {
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		
 		driver.get("https://www.softwaretestingmaterial.com/webdriver-driver-new-firefoxdriver/");
-		
-		driver.navigate().to(arg0);
-		System.out.println();
-		
-		
+				
 		TakesScreenshot screenshot = ((TakesScreenshot)driver);
 		File file = screenshot.getScreenshotAs(OutputType.FILE);
 		File filelocation =new File("E:\\Java-Selenium\\screenshot.png");
@@ -73,8 +69,7 @@ public class SeleniumTest {
 		WebElement element = driver.findElement(By.linkText("Download Excel"));
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
-		SoftAssert assert1 = new SoftAssert();
-		
+				
 		Wait<WebDriver> wait1 = new FluentWait(driver).pollingEvery(Duration.ofSeconds(10)).withTimeout(Duration.ofSeconds(10))
 				.ignoring(Exception.class);
 		WebElement profile = wait1.until(new Function<WebDriver, WebElement>()
